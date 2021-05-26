@@ -12,7 +12,6 @@ c. случайный символ.
 Программа должна вывести на экран любой символ алфавита от 'a' до 'f' включительно.
 """
 import random
-import string
 
 print('Введите диапазон (два числа) для генерации:\nа) случайного целого числа')
 n1 = int(input('Первое число: '))
@@ -27,7 +26,6 @@ random_number = round(random.uniform(n1, n2), 2)
 print(f'Случайное число: {random_number}')
 
 print('в) случайного символа')
-letters = string.ascii_letters
 n1 = ord(input('Первый символ: '))
 n2 = ord(input('Второй символ: '))
 random_number = chr(random.randint(n1, n2))
