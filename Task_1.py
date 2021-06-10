@@ -16,8 +16,8 @@ for i in range(2, 10):
             multiples[i-2] += 1
 
 
-for i in range(0, 8):
-    print(f'Кол-во чисел кратных {i+2} : {multiples[i]}')
+for i, item in enumerate(multiples, start=2):
+    print(f'Кол-во чисел кратных {i} : {item}')
 
 print('-'*20)
 

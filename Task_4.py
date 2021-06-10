@@ -25,5 +25,12 @@ if max_fr > 1:
 else:
     print('Все числа встречаются по одному разу.')
 
-
+# второй вариант используя dict
+diction = {}
+for item in random_list:
+    if item in diction.keys():
+        diction[item] += 1
+    else:
+        diction[item] = 1
+print(diction)
 
